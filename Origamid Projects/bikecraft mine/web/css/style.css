@@ -453,130 +453,69 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .grid-1 {
   width: 40px;
 }
-
 .grid-2 {
   width: 100px;
 }
-
 .grid-3 {
   width: 160px;
 }
-
 .grid-4 {
   width: 220px;
 }
-
 .grid-5 {
   width: 280px;
 }
-
 .grid-6 {
   width: 340px;
 }
-
 .grid-7 {
   width: 400px;
 }
-
 .grid-8 {
   width: 460px;
 }
-
 .grid-9 {
   width: 520px;
 }
-
 .grid-10 {
   width: 580px;
 }
-
 .grid-11 {
   width: 640px;
 }
-
 .grid-12 {
   width: 700px;
 }
-
-.grid-13 {
-  width: 760px;
-}
-
-.grid-14 {
-  width: 820px;
-}
-
-.grid-15 {
-  width: 880px;
-}
-
-.grid-16 {
-  width: 940px;
-}
-
-.grid-1-3 {
-  width: 300px;
-}
+.grid-13 {width: 760px;}
+.grid-14 {width: 820px;}
+.grid-15 {width: 880px;}
+.grid-16 {width: 940px;}
+.grid-1-3 {width: 300px;}
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 768px;
   }
-  .grid-1 {
-    width: 28px;
-  }
-  .grid-2 {
-    width: 76px;
-  }
-  .grid-3 {
-    width: 124px;
-  }
-  .grid-4 {
-    width: 172px;
-  }
-  .grid-5 {
-    width: 220px;
-  }
-  .grid-6 {
-    width: 268px;
-  }
-  .grid-7 {
-    width: 316px;
-  }
-  .grid-8 {
-    width: 364px;
-  }
-  .grid-9 {
-    width: 412px;
-  }
-  .grid-10 {
-    width: 460px;
-  }
-  .grid-11 {
-    width: 508px;
-  }
-  .grid-12 {
-    width: 556px;
-  }
-  .grid-13 {
-    width: 604px;
-  }
-  .grid-14 {
-    width: 652px;
-  }
-  .grid-15 {
-    width: 700px;
-  }
-  .grid-16 {
-    width: 748px;
-  }
-  .grid-1-3 {
-    width: 236px;
-  }
+  .grid-1 {width: 28px;}
+  .grid-2 {width: 76px;}
+  .grid-3 {width: 124px;}
+  .grid-4 {width: 172px;}
+  .grid-5 {width: 220px;}
+  .grid-6 {width: 268px;}
+  .grid-7 {width: 316px;}
+  .grid-8 {width: 364px;}
+  .grid-9 {width: 412px;}
+  .grid-10 {width: 460px;}
+  .grid-11 {width: 508px;}
+  .grid-12 {width: 556px;}
+  .grid-13 {width: 604px;}
+  .grid-14 {width: 652px;}
+  .grid-15 {width: 700px;}
+  .grid-16 {width: 748px;}
+  .grid-1-3 {width: 236px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -589,6 +528,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     float: none;
   }
 }
+
 
 /* Estilos Gerais */
 
@@ -604,6 +544,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .btn {
@@ -700,11 +641,12 @@ img {
 } 
 
 .header_menu ul li a:hover {
-  color: #FFF
+  color: #FFF;
 } 
 
 .header_menu ul li a.menu_ativo {
-  color: #FFF
+  color: #FFF;
+
 } 
 
 /* Introdução */
@@ -716,6 +658,7 @@ img {
   background-size: cover;
   margin-top: 92px;
   text-align: center;
+  padding-top: 80px;
 }
 
 .introducao h1 {
@@ -723,7 +666,7 @@ img {
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 80px;
+
 }
 
 .quote-externo {
@@ -1284,7 +1227,6 @@ img {
 
 .contato_dados span:nth-of-type(even) {
   margin-bottom: 30px;
-
 }
 
 
@@ -1310,3 +1252,176 @@ img {
 .contato_mapa {
   margin-bottom: 60px;
 }
+
+
+/* Estilo para tablets*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+/* Qualidade Home */
+.qualidade::after {
+  right: 66px;
+}
+
+.qualidade_lista li {
+  padding: 10px;
+}
+
+/* Footer */
+
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 6px;
+}
+
+.footer_redes ul li a img{
+  width: 26px;
+  height: 26px;
+}
+
+/* Produtos */
+
+.produto_item h2 {
+  top: -150px;
+  margin-bottom: -56px;
+}
+
+.produto_icone {
+  padding: 41px 0;
+}
+
+.produto_info p {
+  font-size: 14px;
+  padding: 20px 30px;
+  height: 122px;
+}
+
+.produto_info ul li {
+  width: 181px;
+  height: 49px;
+}
+
+}
+
+/* Final Estilo Tablet */
+
+/* Estilo para smartphones*/
+@media only screen and (max-width: 767px) {
+
+  .header {
+    position: relative;
+    padding-bottom: 0px;
+  }
+
+.header img {
+  margin: 0 auto 10px auto; 
+}
+
+.header_menu {
+  text-align: center;
+}
+
+.header_menu ul li{
+  margin: 5px;
+}
+
+.header_menu ul li a{
+
+  border: 4px solid #000;
+  width: 136px;
+  display: block;
+  float: left;
+}
+
+.header_menu ul li a:hover {
+  border-color:#FFF;
+}
+
+.header_menu ul li a.menu_ativo {
+  border-color: #FFF;
+}
+
+/* Introdução */
+
+.introducao {
+  margin-top: 0px;
+  padding-top: 40px;
+  background: url(../img/bg-mobile.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.introducao h1 {
+  font-size: 36px;
+}
+
+/* introdução interna */
+
+.introducao-interna {
+  margin-top: 0px;
+}
+
+/* Call */
+
+.call {
+  padding-top: 10px;
+}
+
+/* Qualidade Home */
+.qualidade::after {
+  display: none;
+}
+
+
+/* Sobre */
+
+.missao_sobre p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 0px;
+}
+
+.missao_sobre ul li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Produtos */
+
+.produto_item h2 {
+  top: -100px;
+  margin-bottom: -68px;
+}
+
+.produto_icone {
+  padding: 41px 0;
+}
+
+.produto_info p {
+  font-size: 14px;
+  padding: 20px 30px;
+  height: auto;
+}
+
+.produto_info ul li {
+  width: 149px;
+  height: 49px;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 14px ;
+}
+
+.form {
+  padding-right: 0px;
+}
+
+.orcamento_dados ul {
+  padding-right: 0px;
+}
+
+/* Contato  */
+.contato_form {
+  padding-right: 0px;
+  margin-bottom: 40px;
+}
+
+} /* Final estilo smartphone */
